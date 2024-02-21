@@ -53,7 +53,7 @@ const Navbar = () => {
         </div>
         <div className="w-[33.3%] relative px-2">
           <input
-            className="w-full p-2 text-gray-900 text-sm h-10 outline-none rounded-full"
+            className="w-full p-2 text-gray-900 text-sm h-10 outline-none rounded-md"
             type="text"
             placeholder="Search Products"
           />

@@ -1,7 +1,7 @@
-import React from "react";
-import MealCard from "./reusables/MealCards";
+
 import { useQuery } from "@tanstack/react-query";
 import { getMealsByCategory } from "@/utils/api";
+import HomeMealView from "./reusables/HomeMealView";
 const CategoryView = ({ category }: { category: string }) => {
   const MealName = category;
 
@@ -16,17 +16,7 @@ const CategoryView = ({ category }: { category: string }) => {
   });
 
   return (
-    <section className="min-h-[70vh]">
-      <h2 className="text-2xl font-bold mb-4">{MealName}</h2>
-      {/* Loader section */}
-
-      {/* View */}
-      <section className="grid grid-cols-3 gap-6 pt-6">
-        {CategoryMeals?.map((meal) => (
-          <MealCard {...meal} />
-        ))}
-      </section>
-    </section>
+   <HomeMealView heading={MealName} Meals={CategoryMeals!}/>
   );
 };
 
