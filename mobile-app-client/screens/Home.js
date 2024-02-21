@@ -49,7 +49,7 @@ export default function Home() {
         changeView={changeView}
       />
 
-      {/* Top picks  */}
+      {/* Top picks || Category View */}
       {view === "TopPicks" ? <TopPicks /> : <CategoryView category={category} />}
     </SafeAreaView>
   );

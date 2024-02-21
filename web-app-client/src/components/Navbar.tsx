@@ -24,7 +24,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="text-customOrange  ">
+    <nav className="text-customOrange bg-white fixed w-full z-50 top-0 left-0 ">
       <div className="w-full p-4 flex justify-between">
         <div>
           <h1 className="text-orange-400 font-bold text-2xl">
